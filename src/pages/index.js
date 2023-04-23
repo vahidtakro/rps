@@ -3,7 +3,8 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import {useEffect, useState} from 'react'
 import css from '../styles/Main.module.css';
-import {LocalStorage} from "../components/localstorage"
+import {LocalStorage} from '../components/localstorage'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -191,9 +192,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <button onClick={letsPlay} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <button onClick={letsPlay} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Play
       </button>
+      <Link className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="/results">Results</Link>
     </main>
     </div>
   )
