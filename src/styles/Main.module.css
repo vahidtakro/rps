@@ -1,0 +1,8 @@
+.icon {
+  display: none;
+  height: 50%;
+}
+
+.icon.active {
+  display: block;
+}
